@@ -1,27 +1,247 @@
+
 :root {
-	--type-xl: 5rem;
-	--type-lg: 2.5rem;
-	--type-md: 1.5rem;
+	--color-fg: black;
+	--color-bg: mintcream;
+	--color-accent: crimson;
+	--color-fade: gainsboro;
 
-	--color-fg: tomato;
-	--color-bg: dodgerblue;
+	--font-h1: "Bungee", sans-serif;
+	--font-h2: "Bungee", sans-serif;
+	--font-p: "Arimo", sans-serif;
+	--font-label: "Arimo", sans-serif;
 
-	--font-display: sans-serif;
-	--font-body: sans-serif;
+	--font-size-h1: calc(var(--font-size-p)*3);
+	--font-size-h2: calc(var(--font-size-p)*1.5);
+	--font-size-p: 1.125rem;
+	--font-size-label: calc(var(--font-size-p)*0.8);
 
-	--space-lg: 3.5rem;
-	--space-md: 2rem;
+	--line-height-h1: 0.95;
+	--line-height-h2: 0.95;
+	--line-height-p: calc(var(--font-size-p)*1.4);
+
+	--space-lg: 3rem;
+	--space-md: 1.5rem;
+	--space-sm: 1rem;
 }
 
 body {
-	font-family: var(--font-display);
+	font-family: var(--font-p);
+	font-size: var(--font-size-p);
+	line-height: var(--line-height-p);
+
 	color: var(--color-fg);
 	background-color: var(--color-bg);
-	padding-block-start: var(--space-lg);
+
+	padding-inline: var(--space-sm);
 }
 
+nav {
+	text-align: center;
+
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 0.5rem;
+	align-items: center;
+
+	font-family: var(--font-label);
+	font-size: var(--font-size-label);
+
+	padding-block: var(--space-md);
+}
+
+nav > a:first-child {
+	font-size: var(--font-size-label);
+	color: var(--color-fg);
+
+	background-color: var(--color-fade);
+
+	border-radius: 1rem;
+	padding: 0.5rem;
+
+	text-transform: uppercase;
+}
+
+nav > a:nth-child(2) {
+	font-size: var(--font-size-label);
+	color: var(--color-bg);
+
+	background-color: var(--color-accent);
+
+	border-radius: 1rem;
+	padding: 0.5rem;
+
+	text-transform: uppercase;
+}
+
+nav > a:last-child {
+	font-size: var(--font-size-label);
+	color: var(--color-fg);
+
+	background-color: var(--color-fade);
+
+	border-radius: 1rem;
+	padding: 0.5rem;
+
+	text-transform: uppercase;
+}
+
+hgroup {
+	font-family: var(--font-label);
+	font-size: var(--font-size-label);
+	line-height: var(--line-height-h2);
+	text-align: center;
+
+	padding: var(--space-md);
+	font-weight: 700;
+}
+
+hgroup > p {
+	max-inline-size: none;
+}
 
 h1 {
-	font-size: var(--type-lg);
+	font-family: var(--font-h1);
+	font-size: var(--font-size-h1);
+	line-height: var(--line-height-h1);
+
+	text-align: center;
+	color: var(--color-accent);
+
 	margin-block: var(--space-lg);
+	overflow-wrap: anywhere;
+}
+
+section {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--space-md);
+
+	padding-block-start: var(--space-md);
+	padding-block-end: var(--space-lg);
+
+	border-block-start: 2px solid var(--color-fg);
+}
+
+section > h2,
+section > p,
+section > blockquote {
+	grid-column: 1;
+}
+
+h2 {
+	font-family: var(--font-h2);
+	font-size: var(--font-size-h2);
+	line-height: var(--line-height-h2);
+
+	color: var(--color-fg);
+}
+
+section h2:nth-child(2) {
+	color: var(--color-accent);
+	font-size: var(--font-size-h1);
+	line-height: var(--line-height-h1);
+
+	background-color: var(--color-fg);
+	border-radius: 1rem;
+
+	padding-inline: var(--space-sm);
+	padding-block: calc(var(--space-sm)*0.5);
+}
+
+blockquote {
+	background-color: var(--color-fade);
+	color: var(--color-accent);
+
+	font-size: var(--font-size-p);
+	font-style: italic;
+	line-height: var(--line-height-p);
+
+	padding: var(--space-md);
+	border-radius: 1rem;
+
+	max-inline-size: 80ch;
+	margin-block: var(--space-md);
+}
+
+em {
+	font-style: italic;
+	font-weight: 700;
+}
+
+p {
+	padding-block: calc(var(--space-sm)*0.5);
+	max-inline-size: 65ch;
+}
+
+p a {
+	text-decoration: underline;
+}
+
+a:hover {
+	color: var(--color-accent);
+}
+
+footer {
+	text-align: center;
+	font-family: var(--font-label);
+	font-size: var(--font-size-label);
+
+	padding-block-end: var(--space-md);
+}
+
+footer a:first-child {
+	text-align: left;
+}
+
+footer a:last-child {
+	text-align: right;
+}
+
+/* Desktop */
+
+@media (min-width: 800px) {
+	:root {
+		--font-size-p: 1.25rem;
+		--font-size-h1: calc(var(--font-size-p)*10);
+		--font-size-h2: calc(var(--font-size-p)*2);
+	}
+
+	body {
+		padding-inline: var(--space-md);
+	}
+
+	nav {
+		gap: var(--space-sm);
+	}
+
+	nav > a:first-child,
+	nav > a:nth-child(2),
+	nav > a:last-child {
+		font-size: calc(var(--font-size-p)*1.2);
+		padding: var(--space-sm);
+	}
+
+	h1 {
+		margin-block: 8rem;
+	}
+
+	section {
+		grid-template-columns: 1fr 1fr;
+		gap: var(--space-lg);
+	}
+
+	section > h2 {
+		grid-column: 1;
+	}
+
+	section > p,
+	section > blockquote {
+		grid-column: 2;
+	}
+
+	blockquote {
+		padding: var(--space-lg);
+		margin: 0 auto;
+		margin-block: var(--space-md);
+	}
 }
