@@ -1,0 +1,27 @@
+:root {
+	--type-xl: 5rem;
+	--type-lg: 2.5rem;
+	--type-md: 1.5rem;
+
+	--color-fg: hotpink;
+	--color-bg: papayawhip;
+
+	--font-display: sans-serif;
+	--font-body: sans-serif;
+
+	--space-lg: 3.5rem;
+	--space-md: 2rem;
+}
+
+body {
+	font-family: var(--font-display);
+	color: var(--color-fg);
+	background-color: var(--color-bg);
+	padding-block-start: var(--space-lg);
+}
+
+
+h1 {
+	font-size: var(--type-lg);
+	margin-block: var(--space-lg);
+}
