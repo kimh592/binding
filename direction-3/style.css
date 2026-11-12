@@ -9,7 +9,7 @@
 	--font-p: "Castoro", serif;
 	--font-label: "IM Fell DW Pica", serif;
 
-	--font-size-h1: calc(var(--font-size-p)*10);
+	--font-size-h1: calc(var(--font-size-p)*4);
 	--font-size-h2: calc(var(--font-size-p)*1.2);
 	--font-size-p: 1.25rem;
 	--font-size-label: calc(var(--font-size-p)*0.8);
@@ -147,4 +147,10 @@ footer{
 
 	padding-block-end: var(--space-md);
 	margin: auto;
+}
+
+@media (min-width: 800px) {
+	:root {
+		--font-size-h1: calc(var(--font-size-p)*10);
+	}
 }
