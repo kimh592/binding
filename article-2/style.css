@@ -259,7 +259,7 @@ mark {
 	hgroup {
 		max-width: 70vw;
 		min-height: 70vh;
-		transform: rotate(1deg);
+		transform: rotate(-1deg);
 	}
 
 	/* ARTICLE */
