@@ -12,7 +12,7 @@
 
 	--font-size-h1: calc(var(--font-size-p)*6);
 	--font-size-h2: calc(var(--font-size-p)*1.2);
-	--font-size-p: 1.2rem;
+	--font-size-p: 1rem;
 	--font-size-label: calc(var(--font-size-p)*0.8);
 
 	--line-height-h1: calc(var(--font-size-h1)*0.80);
