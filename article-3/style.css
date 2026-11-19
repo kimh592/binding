@@ -76,7 +76,7 @@ hgroup {
 	font-family: var(--font-label);
 	font-size: var(--font-size-label);
 
-	max-width: 90vw;
+	max-width: 85vw;
 	min-height: 70vh;
 	margin: 0 auto;
 	padding: var(--space-sm);
@@ -116,6 +116,7 @@ h1 {
 article {
 	max-inline-size: 100ch;
 	padding: var(--space-sm);
+	margin-top: -2rem;
 }
 
 section {
@@ -184,17 +185,6 @@ em{
 
 mark {
 	background-color: var(--color-accent-1);
-}
-
-/* FOOTER */
-
-footer{
-	font-family: var(--font-label);
-	font-size: var(--font-size-label);
-
-	margin-inline: var(--space-md);
-	margin-block-end: var(--space-md);
-	padding-block-end: calc(var(--space-lg)*1.5);
 }
 
 
