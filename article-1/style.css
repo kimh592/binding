@@ -230,7 +230,7 @@ footer{
 	}
 
 	.remote a:nth-child(2):hover{
-		background-color: goldenrod;
+		background-color: khaki;
 	}
 
 	.remote a:nth-child(2):hover::before{
@@ -285,4 +285,10 @@ footer{
 	}
 
 	/* FOOTER */
+
+	footer{
+		right: 0;
+		margin-inline-start: var(--space-lg);
+	}
+
 }

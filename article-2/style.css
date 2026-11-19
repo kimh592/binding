@@ -2,7 +2,7 @@
 :root {
 	--color-fg: rgb(18, 0, 0);
 	--color-bg: ivory;
-	--color-accent-1: goldenrod;
+	--color-accent-1: khaki;
 	--color-accent-2: oldlace;
 
 	--font-h1: "Monsieur La Doulaise", serif;
@@ -218,6 +218,10 @@ footer{
 		width: auto;
 	}
 
+	.remote a{
+		padding-inline-start: var(--space-sm);
+	}
+
 	.remote a:first-child:hover{
 		background-color: lightblue;
 	}
@@ -227,7 +231,7 @@ footer{
 	}
 
 	.remote a:nth-child(2):hover{
-		background-color: goldenrod;
+		background-color: khaki;
 	}
 
 	.remote a:nth-child(2):hover::before{

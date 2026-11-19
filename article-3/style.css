@@ -216,6 +216,10 @@ footer{
 		width: auto;
 	}
 
+	.remote a{
+		padding-inline-start: var(--space-sm);
+	}
+
 	.remote a:first-child:hover{
 		background-color: lightblue;
 	}
@@ -225,7 +229,7 @@ footer{
 	}
 
 	.remote a:nth-child(2):hover{
-		background-color: goldenrod;
+		background-color: khaki;
 	}
 
 	.remote a:nth-child(2):hover::before{
