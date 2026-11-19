@@ -58,7 +58,8 @@ body {
 }
 
 .remote a {
-	padding: var(--space-sm);
+	padding-block: var(--space-sm);
+	padding-inline-end: calc(var(--space-sm)*0.5);
 	text-decoration: underline;
 	text-align: center;
 }
@@ -193,7 +194,8 @@ footer{
 	font-size: var(--font-size-label);
 
 	margin-inline: var(--space-md);
-	padding-block-end: var(--space-md);
+	margin-block-end: var(--space-md);
+	padding-block-end: calc(var(--space-lg)*1.5);
 }
 
 

@@ -58,7 +58,8 @@ body {
 }
 
 .remote a {
-	padding: var(--space-sm);
+	padding-block: var(--space-sm);
+	padding-inline-end: calc(var(--space-sm)*0.5);
 	text-decoration: underline;
 	text-align: center;
 }
@@ -108,6 +109,7 @@ h1 {
 	line-height: var(--line-height-h1);
 
 	margin-block: var(--space-md);
+	padding-block-start: var(--space-md);
 	padding-inline-end: var(--space-lg);
 }
 
@@ -193,7 +195,8 @@ footer{
 	font-size: var(--font-size-label);
 
 	margin-inline: var(--space-md);
-	padding-block-end: var(--space-md);
+	margin-block-end: var(--space-md);
+	padding-block-end: calc(var(--space-lg)*1.5);
 }
 
 
