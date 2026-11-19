@@ -156,7 +156,7 @@ hgroup > p:last-child {
 	align-items: end;
 	justify-content: center;
 
-	padding: var(--space-md);
+	padding: var(--space-sm);
 
 	background-color: oldlace;
 	border: 4px double var(--color-fg);
