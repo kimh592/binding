@@ -137,15 +137,17 @@ hgroup > p:last-child {
 	filter: drop-shadow(0 0.15em 0 rgb(0 0 0 / 25%));
 
 
-	transform: translateY(-4rem) translateX(-0.5rem);
+	transform: translateY(-4rem) translateX(-0.5rem) rotate(1deg);
 }
 
 .menu article:nth-of-type(2) .cover {
 	background-color: var(--color-accent-2);
+	transform: translateY(-4rem) translateX(-0.5rem) rotate(-1deg);
 }
 
 .menu article:nth-of-type(3) .cover {
 	background-color: var(--color-accent-3);
+	transform: translateY(-4rem) translateX(-0.5rem) rotate(1.5deg);
 }
 
 .paper {
