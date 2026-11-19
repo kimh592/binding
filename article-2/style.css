@@ -10,12 +10,12 @@
 	--font-p: "Castoro", serif;
 	--font-label: "IM Fell DW Pica", serif;
 
-	--font-size-h1: calc(var(--font-size-p)*5);
+	--font-size-h1: calc(var(--font-size-p)*8);
 	--font-size-h2: calc(var(--font-size-p)*1.2);
 	--font-size-p: 1rem;
 	--font-size-label: calc(var(--font-size-p)*0.8);
 
-	--line-height-h1: calc(var(--font-size-h1)*1.2);
+	--line-height-h1: calc(var(--font-size-h1)*1);
 	--line-height-h2: calc(var(--font-size-h2)*1.2);
 	--line-height-p: calc(var(--font-size-p)*1.4);
 
@@ -37,7 +37,6 @@ body {
 
 .eyebrow {
 	margin: var(--space-md);
-
 	font-family: var(--font-label);
 	font-size: var(--font-size-label);
 	text-align: center;
@@ -47,28 +46,23 @@ body {
 
 .remote {
 	position: fixed;
-	bottom: var(--space-md);
-	right: var(--space-md);
-	padding: 0;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
 	background-color: var(--color-bg);
+	border-block-start: 4px double var(--color-fg);
 }
 
 .remote a {
-	padding: calc(var(--space-sm)*0.5);
-	border-block-end: 3px dotted var(--color-fg);
+	padding: var(--space-sm);
+	text-decoration: underline;
+	text-align: center;
 }
 
-.remote a:first-child:hover{
-	background-color: lightblue;
-}
-
-.remote a:nth-child(2):hover{
-	background-color: goldenrod;
-}
-
-.remote a:last-child:hover{
-	background-color: darkseagreen;
-}
 /* TITLECARD */
 
 main > header {
@@ -82,7 +76,7 @@ hgroup {
 	font-family: var(--font-label);
 	font-size: var(--font-size-label);
 
-	max-width: 70vw;
+	max-width: 90vw;
 	min-height: 70vh;
 	margin: 0 auto;
 	padding: var(--space-sm);
@@ -113,20 +107,20 @@ h1 {
 	font-size: var(--font-size-h1);
 	line-height: var(--line-height-h1);
 
-	margin-block-start: var(--space-lg);
-	transform: translateX(-1rem);
+	margin-block: var(--space-md);
+	padding-inline-end: var(--space-lg);
 }
 
 /* ARTICLE */
 
 article {
-	max-inline-size: 85ch;
-	padding: var(--space-lg);
+	max-inline-size: 100ch;
+	padding: var(--space-sm);
 }
 
 section {
-	padding: var(--space-lg);
-	margin-bottom: var(--space-lg);
+	padding: var(--space-md);
+	margin-bottom: var(--space-md);
 
 	background-color: var(--color-accent-2);
 	border: 4px double var(--color-fg);
@@ -162,15 +156,8 @@ p a{
 	text-decoration: underline;
 }
 
-a:hover {
-	text-decoration-style: wavy;
-}
-
 blockquote{
-	position: relative;
-	align-items: center;
-
-	padding: var(--space-md);
+	padding: var(--space-sm);
 	margin-block: var(--space-sm);
 
 	background-color: var(--color-accent-1);
@@ -178,7 +165,8 @@ blockquote{
 }
 
 blockquote p{
-	padding: var(--space-md);
+	padding: var(--space-sm);
+	text-align: center;
 	border: 2px dotted var(--color-fg);
 }
 
@@ -208,15 +196,87 @@ footer{
 	padding-block-end: var(--space-md);
 }
 
+
 /* DESKTOP */
 
-@media (min-width: 800px) {
-:root {
-	--font-size-h1: calc(var(--font-size-p)*10);
-}
 
-article {
-	margin-top: -5rem;
-	transform: translateX(3rem);
-}
+@media (width >= 940px) {
+
+	:root {
+	--font-size-h1: calc(var(--font-size-p)*10);
+	}
+
+	/* NAVIGATION REMOTE */
+
+	.remote {
+		bottom: var(--space-md);
+		right: var(--space-md);
+		border: 4px double var(--color-fg);
+		width: auto;
+	}
+
+	.remote a:first-child:hover{
+		background-color: lightblue;
+	}
+
+	.remote a:first-child:hover::before{
+		content: "• ";
+	}
+
+	.remote a:nth-child(2):hover{
+		background-color: goldenrod;
+	}
+
+	.remote a:nth-child(2):hover::before{
+		content: "• ";
+	}
+
+	.remote a:last-child:hover{
+		background-color: darkseagreen;
+	}
+
+	.remote a:last-child:hover::before{
+		content: "• ";
+	}
+
+	/* TITLECARD */
+
+	hgroup {
+		max-width: 70vw;
+		min-height: 70vh;
+	}
+
+	/* ARTICLE */
+
+	article {
+		max-inline-size: 85ch;
+		padding: var(--space-lg);
+		margin-top: -5rem;
+		transform: translateX(3rem);
+	}
+
+	section {
+		padding: var(--space-lg);
+		margin-bottom: var(--space-lg);
+	}
+
+	h1 {
+		padding-inline-end: calc(var(--space-lg)*1.5);
+	}
+
+	/* MENU STYLE */
+
+	a:hover {
+		text-decoration-style: wavy;
+	}
+
+	blockquote{
+		padding: var(--space-md);
+	}
+
+	blockquote p{
+		padding: var(--space-md);
+	}
+
+	/* FOOTER */
 }
