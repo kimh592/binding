@@ -217,6 +217,10 @@ footer{
 		width: auto;
 	}
 
+	.remote a{
+		padding-inline-start: var(--space-sm);
+	}
+
 	.remote a:first-child:hover{
 		background-color: lightblue;
 	}
