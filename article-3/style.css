@@ -60,7 +60,6 @@ body {
 .remote a {
 	padding-block: var(--space-sm);
 	padding-inline-end: calc(var(--space-sm)*0.5);
-	text-decoration: underline;
 	text-align: center;
 }
 
@@ -210,6 +209,8 @@ footer{
 	/* NAVIGATION REMOTE */
 
 	.remote {
+		display: flex;
+		flex-direction: row;
 		bottom: var(--space-md);
 		right: var(--space-md);
 		border: 4px double var(--color-fg);
@@ -217,30 +218,22 @@ footer{
 	}
 
 	.remote a{
-		padding-inline-start: var(--space-sm);
-	}
-
-	.remote a:first-child:hover{
-		background-color: lightblue;
-	}
-
-	.remote a:first-child:hover::before{
-		content: "• ";
+		padding-inline: var(--space-sm);
 	}
 
 	.remote a:nth-child(2):hover{
+		background-color: lightblue;
+	}
+
+	.remote a:nth-child(3):hover{
 		background-color: khaki;
 	}
 
-	.remote a:nth-child(2):hover::before{
-		content: "• ";
-	}
-
-	.remote a:last-child:hover{
+	.remote a:nth-child(4):hover{
 		background-color: darkseagreen;
 	}
 
-	.remote a:last-child:hover::before{
+	.remote a:hover::before{
 		content: "• ";
 	}
 
