@@ -218,7 +218,7 @@ mark {
 
 @media (width >= 940px) {
 	:root {
-	--font-size-h1: calc(var(--font-size-p)*5);
+	--font-size-h1: calc(var(--font-size-p)*4);
 	}
 
 	/* NAVIGATION REMOTE */
@@ -257,6 +257,7 @@ mark {
 	hgroup {
 		max-width: 70vw;
 		min-height: 70vh;
+		transform: rotate(1deg);
 	}
 
 	/* ARTICLE */

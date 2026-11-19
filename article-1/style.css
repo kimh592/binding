@@ -10,7 +10,7 @@
 	--font-p: "Castoro", serif;
 	--font-label: "IM Fell DW Pica", serif;
 
-	--font-size-h1: calc(var(--font-size-p)*6);
+	--font-size-h1: calc(var(--font-size-p)*5);
 	--font-size-h2: calc(var(--font-size-p)*1.2);
 	--font-size-p: 1rem;
 	--font-size-label: calc(var(--font-size-p)*0.8);
@@ -129,6 +129,7 @@ h1 {
 	line-height: var(--line-height-h1);
 
 	margin-block: var(--space-md);
+	margin-inline-start: var(--space-sm);
 	padding-block-end: var(--space-sm);
 }
 
@@ -257,6 +258,7 @@ mark {
 	hgroup {
 		max-width: 70vw;
 		min-height: 70vh;
+		transform: rotate(1deg);
 	}
 
 	/* ARTICLE */
