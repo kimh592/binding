@@ -13,7 +13,7 @@
 	--font-size-h1: calc(var(--font-size-p)*3);
 	--font-size-h2: calc(var(--font-size-p)*1.2);
 	--font-size-p: 1rem;
-	--font-size-label: calc(var(--font-size-p)*0.8);
+	--font-size-label: calc(var(--font-size-p)*0.95);
 
 	--line-height-h1: calc(var(--font-size-h1)*0.95);
 	--line-height-h2: calc(var(--font-size-h2)*1.2);
@@ -81,7 +81,7 @@ body {
 }
 
 .remote a {
-	padding-block: var(--space-sm);
+	padding-block: calc(var(--space-sm)*0.75);
 	padding-inline-end: calc(var(--space-sm)*0.5);
 	text-align: center;
 }
@@ -99,7 +99,7 @@ hgroup {
 	font-family: var(--font-label);
 	font-size: var(--font-size-label);
 
-	max-width: 90vw;
+	max-width: 88vw;
 	min-height: 70vh;
 	margin: 0 auto;
 	padding: var(--space-sm);

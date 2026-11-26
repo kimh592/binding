@@ -10,10 +10,10 @@
 	--font-p: "Castoro", serif;
 	--font-label: "IM Fell DW Pica", serif;
 
-	--font-size-h1: calc(var(--font-size-p)*5);
+	--font-size-h1: calc(var(--font-size-p)*6);
 	--font-size-h2: calc(var(--font-size-p)*1.2);
 	--font-size-p: 1rem;
-	--font-size-label: calc(var(--font-size-p)*0.8);
+	--font-size-label: calc(var(--font-size-p)*0.95);
 
 	--line-height-h1: calc(var(--font-size-h1)*0.80);
 	--line-height-h2: calc(var(--font-size-h2)*1.2);
@@ -81,7 +81,7 @@ body {
 }
 
 .remote a {
-	padding-block: var(--space-sm);
+	padding-block: calc(var(--space-sm)*0.75);
 	padding-inline-end: calc(var(--space-sm)*0.5);
 	text-align: center;
 }
