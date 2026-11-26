@@ -144,7 +144,7 @@ article {
 
 section {
 	padding: var(--space-md);
-	margin-bottom: var(--space-lg);
+	margin-block-end: var(--space-lg);
 
 	background-color: var(--color-accent-2);
 	border: 4px double var(--color-fg);
@@ -152,7 +152,7 @@ section {
 }
 
 section:last-child{
-	margin-bottom: calc(var(--space-lg)*3);
+	margin-block-end: calc(var(--space-lg)*3);
 }
 
 h2 {
@@ -267,13 +267,13 @@ mark {
 	article {
 		max-inline-size: 85ch;
 		padding: var(--space-lg);
+		margin: auto;
 		margin-top: -5rem;
-		transform: translateX(3rem);
 	}
 
 	section {
 		padding: var(--space-lg);
-		margin-bottom: var(--space-lg);
+		margin-block-end: var(--space-lg);
 	}
 
 	h1 {
