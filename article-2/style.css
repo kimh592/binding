@@ -31,6 +31,8 @@ body {
 
 	color: var(--color-fg);
 	background-color: var(--color-bg);
+	background-image: url("../images/table2.png");
+	background-size: 100vw;
 }
 
 /* EYEBROW HEADER */
@@ -97,7 +99,7 @@ hgroup {
 	font-family: var(--font-label);
 	font-size: var(--font-size-label);
 
-	max-width: 85vw;
+	max-width: 90vw;
 	min-height: 70vh;
 	margin: 0 auto;
 	padding: var(--space-sm);
