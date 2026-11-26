@@ -45,7 +45,6 @@ body {
 main > header {
 	position: relative;
 	text-align: center;
-	padding: var(--space-lg) var(--space-md);
 }
 
 hgroup {
@@ -73,7 +72,8 @@ hgroup > p:last-child {
 /* MENU */
 
 .menu {
-	padding: var(--space-md);
+	padding-inline: var(--space-md);
+	padding-block-end: var(--space-md);
 }
 
 .menu h2 {
@@ -194,7 +194,7 @@ footer p {
 	}
 
 	main > header {
-		padding-block: calc(var(--space-lg)*2);
+		padding-block-end: calc(var(--space-lg)*2);
 	}
 
 	.menu {
