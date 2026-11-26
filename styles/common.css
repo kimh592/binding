@@ -38,6 +38,7 @@ body {
 	font-family: var(--font-label);
 	font-size: var(--font-size-label);
 	text-align: center;
+	padding-block-start: var(--space-md);
 }
 
 /* TITLECARD */
@@ -66,7 +67,7 @@ hgroup > p:last-child {
 
 .introduction {
 	max-width: 50ch;
-	margin: var(--space-lg) auto 0;
+	margin: var(--space-lg) auto;
 }
 
 /* MENU */
@@ -194,7 +195,7 @@ footer p {
 	}
 
 	main > header {
-		padding-block-end: calc(var(--space-lg)*2);
+		padding-block-end: var(--space-lg);
 	}
 
 	.menu {
