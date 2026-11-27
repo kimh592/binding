@@ -5,15 +5,17 @@
 	--color-accent-2: khaki;
 	--color-accent-3: darkseagreen;
 
-	--font-h1: "Vina Sans", serif;
-	--font-h2: "IM Fell DW Pica", serif;
+	--font-h1: "Vina Sans", sans-serif;
+	--font-a1: "Archivo", sans-serif;
+	--font-a2: "Monsieur La Doulaise", serif;
+	--font-a3: "Special Elite", serif;
 	--font-p: "Castoro", serif;
 	--font-label: "IM Fell DW Pica", serif;
 
 	--font-size-h1: calc(var(--font-size-p)*6);
 	--font-size-h2: calc(var(--font-size-p)*1.2);
 	--font-size-p: 1rem;
-	--font-size-label: calc(var(--font-size-p)*0.8);
+	--font-size-label: calc(var(--font-size-p)*0.95);
 
 	--line-height-p: calc(var(--font-size-p)*1.4);
 
@@ -78,7 +80,7 @@ hgroup > p:last-child {
 }
 
 .menu h2 {
-	font-family: var(--font-h2);
+	font-family: var(--font-label);
 	font-size: var(--font-size-h2);
 	text-align: center;
 
@@ -99,18 +101,19 @@ hgroup > p:last-child {
 }
 
 .menu article:nth-of-type(1) h3 {
-	font-family: "Vina Sans", sans-serif;
+	font-family: var(--font-a1);
+	text-transform: uppercase;
 }
 
 .menu article:nth-of-type(2) h3 {
-	font-family: "Monsieur La Doulaise", cursive;
+	font-family: var(--font-a2);
 	font-size: calc(var(--font-size-p)*4);
 	padding-block-start: var(--space-sm);
 	padding-inline-end: var(--space-sm);
 }
 
 .menu article:nth-of-type(3) h3 {
-	font-family: "Special Elite", serif;
+	font-family: var(--font-a3);
 	font-size: calc(var(--font-size-p)*2);
 }
 

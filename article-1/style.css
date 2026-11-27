@@ -5,7 +5,7 @@
 	--color-accent-1: lightblue;
 	--color-accent-2: oldlace;
 
-	--font-h1: "Vina Sans", serif;
+	--font-h1: "Archivo", sans-serif;
 	--font-h2: "IM Fell DW Pica", serif;
 	--font-p: "Castoro", serif;
 	--font-label: "IM Fell DW Pica", serif;
@@ -129,6 +129,7 @@ h1 {
 	font-family: var(--font-h1);
 	font-size: var(--font-size-h1);
 	line-height: var(--line-height-h1);
+	text-transform: uppercase;
 
 	margin-block: var(--space-md);
 	margin-inline-start: var(--space-sm);
@@ -221,7 +222,7 @@ mark {
 @media (width >= 940px) {
 
 	:root {
-	--font-size-h1: calc(var(--font-size-p)*10);
+	--font-size-h1: calc(var(--font-size-p)*8);
 	}
 
 	/* NAVIGATION REMOTE */
