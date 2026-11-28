@@ -67,6 +67,10 @@ hgroup > p:last-child {
 	font-style: italic;
 }
 
+nobr {
+	white-space: nowrap;
+}
+
 .introduction {
 	max-width: 50ch;
 	margin: var(--space-lg) auto;

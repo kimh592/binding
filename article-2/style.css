@@ -31,8 +31,6 @@ body {
 
 	color: var(--color-fg);
 	background-color: var(--color-bg);
-	background-image: url("../images/table2.png");
-	background-size: 100vw;
 }
 
 /* EYEBROW HEADER */
@@ -215,6 +213,10 @@ mark {
 	background-color: var(--color-accent-1);
 }
 
+nobr {
+	white-space: nowrap;
+}
+
 
 /* DESKTOP */
 
@@ -223,6 +225,11 @@ mark {
 
 	:root {
 	--font-size-h1: calc(var(--font-size-p)*10);
+	}
+
+	body{
+		background-image: url("../images/table2.png");
+		background-size: 100vw;
 	}
 
 	/* NAVIGATION REMOTE */

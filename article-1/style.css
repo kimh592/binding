@@ -10,7 +10,7 @@
 	--font-p: "Castoro", serif;
 	--font-label: "IM Fell DW Pica", serif;
 
-	--font-size-h1: calc(var(--font-size-p)*6);
+	--font-size-h1: calc(var(--font-size-p)*3.5);
 	--font-size-h2: calc(var(--font-size-p)*1.2);
 	--font-size-p: 1rem;
 	--font-size-label: calc(var(--font-size-p)*0.95);
@@ -31,8 +31,6 @@ body {
 
 	color: var(--color-fg);
 	background-color: var(--color-bg);
-	background-image: url("../images/table2.png");
-	background-size: 100vw;
 }
 
 /* EYEBROW HEADER */
@@ -132,7 +130,6 @@ h1 {
 	text-transform: uppercase;
 
 	margin-block: var(--space-md);
-	margin-inline-start: var(--space-sm);
 	padding-block-end: var(--space-sm);
 }
 
@@ -151,6 +148,7 @@ section {
 	background-color: var(--color-accent-2);
 	border: 4px double var(--color-fg);
 	filter: drop-shadow(0 0.15em 0 rgb(0 0 0 / 25%));
+	hyphens: manual;
 }
 
 section:last-child{
@@ -216,13 +214,22 @@ mark {
 	background-color: var(--color-accent-1);
 }
 
+nobr {
+	white-space: nowrap;
+}
+
 /* DESKTOP */
 
 
 @media (width >= 940px) {
 
 	:root {
-	--font-size-h1: calc(var(--font-size-p)*8);
+	--font-size-h1: calc(var(--font-size-p)*7);
+	}
+
+	body{
+		background-image: url("../images/table2.png");
+		background-size: 100vw;
 	}
 
 	/* NAVIGATION REMOTE */
